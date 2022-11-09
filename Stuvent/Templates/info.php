@@ -1,51 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Stuvent, uw event voor een student</title>
-</head>
-
-<body>
-<div class="w3-content w3-section" style="width: 100%"></div>
-<img class="mySlides" src="img/img1.png" style="width:100vw">
-</div>
-<!--Hier is de nav bar-->
-<div class="container-fluid ">
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Registreren</a></li>
-                <li><a href="about.html">Over Stuvent</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
 
 <?php
-$test = "test";
-var_dump($test);
-
+include_once "defaults/head.php";
 ?>
 
+<body>
+<?php
+include_once "defaults/jumbotron.php";
+?>
 
-
+<?php
+include_once "defaults/nav-bar.php";
+?>
     <!--Hier beginnen de events-->
     <div class="about">
         <div class="about-text">
@@ -69,27 +36,13 @@ var_dump($test);
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, sequi minima earum sapiente rerum omnis quod aperiam, repellat facilis tempore incidunt quisquam? Unde corporis tempora eius veniam molestiae aperiam dignissimos?</p>
             <hr>
             <h1>Inschrijven</h1>
-            <a class="enroll-button" href="">Klik hier om je in te schrijven</a>
-
-
-
+            <a class="enroll-button" href="">Klik hier om je in te schrijven</a
         </div>
     </div>
-
-
-
-
         </section>
-
-
-
-        <script src="script.js"></script>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
+<?php
+include_once "defaults/script.php";
+?>
 </body>
 
 </html>
